@@ -74,9 +74,10 @@ var ModeManager = {
     }
 };
 
+$( document ).ready(function() { init();});
 
-function initiate(){
-	this.ModeManager.start(MODE_SPLASH, showMenu());
+function init(){
+  this.ModeManager.start(MODE_SPLASH, showMenu());
 }
 
 function showMenu(){

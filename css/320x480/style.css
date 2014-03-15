@@ -20,8 +20,8 @@
 }
 
 @font-face {
-font-family: 'magic';
-src: url('../fonts/magic.ttf?') format('truetype');
+font-family: magic;
+src: url('../fonts/magic.TTF?') format('truetype');
 }
 
 
@@ -60,15 +60,88 @@ body {
   position: absolute;
 }
 
+/* VIEW  SPLASH  BEGINNING*/
 #views-splash {
   left: 0%;
   background: url("../../images/background.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
+#views #views-splash {
+  width: 100%;
+  transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  
+}
+/* VIEW  SPLASH  END*/
+
+/* VIEW  MENU  BEGINNING*/
+
+
 #views-menu {
   left: 100%;
   background: url("../../images/background-menu.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
+
+#views #views-menu {
+  width: 100%;
+  transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+}
+
+.views-menu-clickable-region{
+  float: left;
+  margin-left:25px;
+  margin-top:8px;
+  width: 266px;
+  height: 48px;
+  border-radius: 63px;
+}
+
+.views-menu-title {
+  background: url("../../images/bg-title.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  width: 320px;
+  height: 154px;
+}
+
+.views-menu-button-white{
+  background: url("../../images/bg-button-white.png");
+  width: 320px;
+  height: 66px;
+}
+
+.views-menu-button-green{
+  background: url("../../images/bg-button-green.png");
+  width: 320px;
+  height: 62px;
+}
+
+.views-menu-button-red{
+  background: url("../../images/bg-button-red.png");
+  width: 320px;
+  height: 64px;
+}
+
+.views-menu-button-black{
+  background: url("../../images/bg-button-black.png");
+  width: 320px;
+  height: 64px;
+}
+
+.views-menu-button-blue{
+  background: url("../../images/bg-button-blue.png");
+  width: 320px;
+  height: 70px;
+}
+
+.buttons-text{
+  font-family: magic;
+  font-size: 30px;
+  color: black;
+  float: left;
+  margin-left: 65px;
+  margin-top: 12px;
+}
+/* VIEW  MENU  END*/
 
 #views-counter {
   left: 200%;
@@ -81,19 +154,6 @@ body {
 #views-mechanics {
   left: 400%;
   height: 100%;
-}
-
-#views #views-splash {
-  width: 100%;
-  transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  
-}
-
-#views #views-menu {
-  width: 100%;
-  transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
 }
 
 #views #views-counter {
